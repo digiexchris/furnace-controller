@@ -1,0 +1,85 @@
+esphome:
+  name: furnace-controller
+
+esp32:
+  board: lolin_s2_mini
+
+# Enable logging
+logger:
+
+switch:
+  - platform: gpio
+    pin: 8
+    name: "Furnace Cool"
+    id: relay1
+    interlock: [relay2]
+    restore_mode: RESTORE_DEFAULT_OFF
+
+  - platform: gpio
+    pin: 7
+    name: "Furnace Heat"
+    id: relay2
+    interlock: [relay1]
+    restore_mode: RESTORE_DEFAULT_OFF
+
+  - platform: gpio
+    pin: 9
+    name: "Furnace Fan Only"
+    id: relay3
+    restore_mode: RESTORE_DEFAULT_OFF
+
+output:
+  - platform: gpio
+    pin: 17
+    id: WIFI_led
+  - platform: gpio
+    pin: 14
+    id: status_led
+
+interval:
+  - interval: 1s
+    then:
+      if:
+        condition:
+          wifi.connected:
+        then:
+          - output.turn_on: WIFI_led
+          - if:
+              condition:
+                api.connected:
+              then:
+                - output.turn_on: status_led
+              else:
+                - output.turn_off: status_led
+        else:
+          - output.turn_off: WIFI_led
+          - output.turn_off: status_led
+
+sensor:
+  - platform: wifi_signal
+    name: "Furnace WiFi Signal"
+    update_interval: 10s
+
+binary_sensor:
+  - platform: status
+    name: "Furnace Status"
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "YOUR KEY NOT MINE"
+
+ota:
+  password: "YOUR PASSWORD NOT MINE, have ESPHome generate these for you"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  #ap:
+  #  ssid: "Furnace-Controller"
+  #  password: "xN6h3JgsXoET"
+
+#captive_portal:
+    

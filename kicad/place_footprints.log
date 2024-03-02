@@ -1,0 +1,23 @@
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 405:Plugin executed on: 'win32'
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 406:Plugin executed with python version: '3.9.16 (main, May 18 2023, 07:48:16) [MSC v.1936 64 bit (AMD64)]'
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 407:KiCad build version: 7.0.5
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 408:Plugin version: 2.0.3
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 409:Frame repr: <wx._core.Frame object at 0x0000024A4E130DC0>
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint J1 on root level
+06-19 23:28:59 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint U2 on root level
+06-19 23:29:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 588:Reference designator is: U
+06-19 23:29:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 589:Reference number is: 1
+06-19 23:29:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 621:Sorted and filtered list:
+['U1', 'U2', 'U3', 'U4', 'U5']
+06-19 23:29:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 659:Footprints to place:
+['U1', 'U2', 'U3', 'U4', 'U5']
+06-19 23:35:13 com_github_bouni_kicad-jlcpcb-tools.store 208:Part C2 does not exist in the database and will be created from the board.
+06-19 23:35:13 com_github_bouni_kicad-jlcpcb-tools.store 208:Part C1 does not exist in the database and will be created from the board.
+06-19 23:35:13 com_github_bouni_kicad-jlcpcb-tools.store 240:Part U2 is already in the database but value, footprint, bom or pos values changed in the board file, part will be updated, lcsc overwritten/cleared.
+06-19 23:37:00 com_github_bouni_kicad-jlcpcb-tools.mainwindow 949:All mappings saved
+06-20 00:44:22 com_github_bouni_kicad-jlcpcb-tools.store 208:Part H4 does not exist in the database and will be created from the board.
+06-20 00:44:22 com_github_bouni_kicad-jlcpcb-tools.store 208:Part H3 does not exist in the database and will be created from the board.
+06-20 00:44:22 com_github_bouni_kicad-jlcpcb-tools.store 208:Part H2 does not exist in the database and will be created from the board.
+06-20 00:44:22 com_github_bouni_kicad-jlcpcb-tools.store 208:Part H1 does not exist in the database and will be created from the board.
+06-20 00:44:22 com_github_bouni_kicad-jlcpcb-tools.store 208:Part L1 does not exist in the database and will be created from the board.

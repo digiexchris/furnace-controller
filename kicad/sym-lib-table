@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MBF10F")(type "KiCad")(uri "${KIPRJMOD}/footprints/mb10f/MB10F-13.kicad_sym")(options "")(descr ""))
+  (lib (name "NCP1117STAT3")(type "KiCad")(uri "${KIPRJMOD}/footprints/ncp1117/NCP1117STAT3.kicad_sym")(options "")(descr ""))
+  (lib (name "NCP1117LPST33T3G")(type "KiCad")(uri "${KIPRJMOD}/footprints/ncp1117/NCP1117LPST33T3G.kicad_sym")(options "")(descr ""))
+  (lib (name "SS14")(type "KiCad")(uri "${KIPRJMOD}/footprints/ss14/SS14.kicad_sym")(options "")(descr ""))
+  (lib (name "TYPE-C_16PIN_2MD__073_")(type "KiCad")(uri "${KIPRJMOD}/footprints/usb-c/TYPE-C_16PIN_2MD__073_.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32_mini")(type "Legacy")(uri "${KIPRJMOD}/footprints/s2-d1-mini/ESP32_mini.lib")(options "")(descr ""))
+)
